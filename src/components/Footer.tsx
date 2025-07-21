@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Phone, Mail, MapPin, Clock, Facebook, Twitter, Instagram, Youtube } from "lucide-react";
+import logo from "@/assets/Smith-logo.png";
 
 const Footer = () => {
   const quickLinks = [
@@ -29,8 +30,12 @@ const Footer = () => {
             {/* Company Info */}
             <div className="lg:col-span-1">
               <div className="flex items-center space-x-3 mb-6">
-                <div className="w-12 h-12 bg-accent-gradient rounded-lg flex items-center justify-center">
-                  <span className="text-primary-foreground font-bold text-xl">S</span>
+                <div className="w-12 h-12 overflow-hidden rounded-lg">
+                  <img 
+                    src={logo} 
+                    alt="Smith Tours Logo" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold">Smith Tours</h3>
